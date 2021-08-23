@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "1ea078ca-8899-49fd-93d4-a6ff085408e8",
+		"name": "apiproject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sendInvitations",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "dharmesh.codewexy@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://crdinfosoft.com/authapis/api/sendInvitations"
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_name",
+							"value": "dharmesh",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://crdinfosoft.com/authapis/api/form/eyJlbWFpbCI6ImRoYXJtZXNoLmNvZGV3ZXh5QGdtYWlsLmNvbSIsImhhc2hfbm8iOiIkMnkkMTAkaFwvcFZjMHViQ2hEVWtRVUdKTTMxek8uUzlWSGsudm0xTW16QTRJdXpyNEFDdVJ5c3hmdm9tIn0="
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_name",
+							"value": "dharmesh",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://crdinfosoft.com/authapis/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "verify_email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "verification_code",
+							"value": "532455",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "dharmesh.codewexy@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://crdinfosoft.com/authapis/api/verify_email"
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOGI3MTg5MGM5ZjNjNWM1YTU1OGE2NTNkMDYwM2E4N2U5NDNmNTZjNGMwY2IxOTBkMjQ2Y2I0YThhNTIwYzk2ODZkZGI5NmRkMTY1OTE1YzkiLCJpYXQiOjE2Mjk3MjMzODUuNDAxNDM1LCJuYmYiOjE2Mjk3MjMzODUuNDAxNDQyLCJleHAiOjE2NjEyNTkzODUuMzExNDMsInN1YiI6IjI0Iiwic2NvcGVzIjpbXX0.LbewofPXU-awJjqUGKH2cyBlK9h3JYZB1ripJq-zG0q3LVsaDnq1EXgrWjLv8SUHg3X5uQKW3CVb0kODOmFKUEpQwg5SnBhtvSc-Rq19LbLLznANvTnFUutKkKSgeFIDRaXrl2W38NhH58vOtC4cjXOMW6CCACGrtsCLh5o_30q2u32M8-h6pwvGZ3aDM_xjoLTm7KWPz-jR2FqNMbr4i3dihSZ3_vaQFWjOsxhbVNHBrg3D1zP-RzNZqDz2l0G9xYM3tO955D19bbpSBVGLyockiqQIw3KAFLTh7-wxynHI0yHmtiwIccOXanOqLThWZLl5xroKSQ1rXOJDfKuWK24OuCTFm4kBOBW28IED_NzGkP3_WzYoa-SINzE6Blbjh6htpOaajTwOsL06zjysy0enKkSkTp-ODuTpg0sij8Ly3683ylDrP4ML7xaP-D72165I7V2kuzHTz56CtnvABFKSvMnFwHx59ZTQBlJzpQC933oFPhpBjVtZqTeJz64PQ3KJdsk6tSouvAXtosUwxUltMF5KtnL7_nSZMR7N8IJoK0FLlW0iPHsgU4Z8a2uP0PKDtOXqwWdqXT6uIrN42dIyZYuTGQgz8gyZgaVwx-LNvCNNUa0X9-5NyAZWM2PqXiMce6stqVnRp-8v1UTNKVXCfJ_96TthanmgF1_-1Ps"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "https://crdinfosoft.com/authapis/api/profile"
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNmVhNmRlMjMwY2JiZjYxYjhmYWM5NTllYWFlMGQ0ZDY3YmU4NmQzMDcwZGYwYjY4YWRmMzBiOTkyZGQzYTE0MDBjMGYwOGE3ZmE5Y2YyZjIiLCJpYXQiOjE2Mjk3MTgyMzEuMzMzODI0LCJuYmYiOjE2Mjk3MTgyMzEuMzMzODMsImV4cCI6MTY2MTI1NDIzMS4zMDQ5MjMsInN1YiI6IjIzIiwic2NvcGVzIjpbXX0.ZB1b4AiUo7S-65ZWuoBeWhIEu0xi4ozVCCLKYqJLPJRvZz47e2Z7ldQsNWEo4m4RI0G3_TdVO5gi59IP4rz0I_-IRjuvRudzRWflWQfeiiDK3EmYf7YBZleHOHIn_ufGyhZcH8jeFBZAIKYuGVqqo4g3uy1PprkyYm5i6zsQ3CSoAzc06jfOknrf8jHEm8MXvK-OStSri7KiNzTkyvAkgmqylHE5P8x_Qzlz4HkmO_oOw7uG6804zs4-z7r2LDKyuo9VOZymZU7RzrfHFl0w6HexsyvCUQF2l_KMA8CisxUbtM9XvzR9DpZNLxcdHfGCEO5dSo4GqZYNzjtqfxgzzjYfrQQ-emMyl8AFjJnMOZnU1F0yHToKByTDMHjbmf2IUXCqFT3JVv4kRGhTP7DSl2QLJMrD3ryKkgEDnqLDA9FLYUjZa-d9KPzSlD0R9PjrKPWb74gi0p5ZYebl3-iQDEAUmvscoroNHHglSloO_eZZDZJQZ2rrSMvcLqxEZ1qk40aHekCWtiXSNFqzchqIW3F11fexAmCB53zqqb9--_UypVSLeQnGp7DgujLPLsENB8GD-AL-UjQcEMkXrGPD0l-EKjqwgOzYg3fC_ucXBWHaES92lU8_HcjB2TTl5GH4Hc-rSubmCg4WNgOsbMz1wBU2Z1zXXGsUwhJE7cxOQ2Y"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/api/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "update_profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOGI3MTg5MGM5ZjNjNWM1YTU1OGE2NTNkMDYwM2E4N2U5NDNmNTZjNGMwY2IxOTBkMjQ2Y2I0YThhNTIwYzk2ODZkZGI5NmRkMTY1OTE1YzkiLCJpYXQiOjE2Mjk3MjMzODUuNDAxNDM1LCJuYmYiOjE2Mjk3MjMzODUuNDAxNDQyLCJleHAiOjE2NjEyNTkzODUuMzExNDMsInN1YiI6IjI0Iiwic2NvcGVzIjpbXX0.LbewofPXU-awJjqUGKH2cyBlK9h3JYZB1ripJq-zG0q3LVsaDnq1EXgrWjLv8SUHg3X5uQKW3CVb0kODOmFKUEpQwg5SnBhtvSc-Rq19LbLLznANvTnFUutKkKSgeFIDRaXrl2W38NhH58vOtC4cjXOMW6CCACGrtsCLh5o_30q2u32M8-h6pwvGZ3aDM_xjoLTm7KWPz-jR2FqNMbr4i3dihSZ3_vaQFWjOsxhbVNHBrg3D1zP-RzNZqDz2l0G9xYM3tO955D19bbpSBVGLyockiqQIw3KAFLTh7-wxynHI0yHmtiwIccOXanOqLThWZLl5xroKSQ1rXOJDfKuWK24OuCTFm4kBOBW28IED_NzGkP3_WzYoa-SINzE6Blbjh6htpOaajTwOsL06zjysy0enKkSkTp-ODuTpg0sij8Ly3683ylDrP4ML7xaP-D72165I7V2kuzHTz56CtnvABFKSvMnFwHx59ZTQBlJzpQC933oFPhpBjVtZqTeJz64PQ3KJdsk6tSouvAXtosUwxUltMF5KtnL7_nSZMR7N8IJoK0FLlW0iPHsgU4Z8a2uP0PKDtOXqwWdqXT6uIrN42dIyZYuTGQgz8gyZgaVwx-LNvCNNUa0X9-5NyAZWM2PqXiMce6stqVnRp-8v1UTNKVXCfJ_96TthanmgF1_-1Ps"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Dharmesh",
+							"type": "text"
+						},
+						{
+							"key": "user_name",
+							"value": "dharmesh",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "dharmesh.codewexy@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": "/C:/Users/admin/OneDrive/Desktop/acrobat_reader_logo.png"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://crdinfosoft.com/authapis/api/update_profile"
+			},
+			"response": []
+		}
+	]
+}
